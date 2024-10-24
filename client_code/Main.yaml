@@ -1,0 +1,53 @@
+components:
+- components:
+  - components:
+    - event_bindings: {change: slider_2_change, x_slider_change: slider_2_x_slider_change}
+      layout_properties: {grid_position: 'JYNVHC,WOYMYB'}
+      name: slider_2
+      properties: {}
+      type: form:Slider
+    - layout_properties: {grid_position: 'FIYXIZ,QYWYUW'}
+      name: label_1
+      properties: {align: right, background: '', bold: false, border: '', font: '', font_size: 24, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Value:', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'FIYXIZ,EFXJGO'}
+      name: label_3
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 24, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '1', tooltip: '', underline: false, visible: true}
+      type: Label
+    - event_bindings: {change: slider_1_change, x_slider_change: slider_1_x_slider_change}
+      layout_properties: {grid_position: 'ATOTSY,RKCJTW'}
+      name: slider_1
+      properties: {level: 1, slider_max: 20, slider_min: 0, step: 1}
+      type: form:Slider
+    - layout_properties: {grid_position: 'IZNZPZ,CXQKWC'}
+      name: label_2
+      properties: {align: right, background: '', bold: false, border: '', font: '', font_size: 24, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: 'Value:', tooltip: '', underline: false, visible: true}
+      type: Label
+    - layout_properties: {grid_position: 'IZNZPZ,LNHMUC'}
+      name: label_4
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 24, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '1', tooltip: '', underline: false, visible: true}
+      type: Label
+    - event_bindings: {click: reset_btn_click}
+      layout_properties: {grid_position: 'PWWODT,UPKMWA'}
+      name: reset_btn
+      properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: primary-color, spacing_above: small, spacing_below: small, text: Reset, tooltip: '', underline: false, visible: true}
+      type: Button
+    layout_properties: {grid_position: 'TFODFO,FMIFZB'}
+    name: card_1_copy
+    properties: {col_widths: '{}', role: card}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_5
+  properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Slider Example, tooltip: '', underline: false, visible: true}
+  type: Label
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
